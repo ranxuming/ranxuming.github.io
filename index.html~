@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eric Nalisnick | University of Amsterdam</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			.markdown-body {
+				box-sizing: border-box;
+				min-width: 200px;
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 45px;
+			}
+			@media (max-width: 767px) {
+				.markdown-body {
+					padding: 15px;
+				}
+				.left {
+			    width: 100%;
+			  }
+			  .right {
+			    width: 100%;
+			  }
+				.portrait {
+					margin-bottom: 1em;
+			  }
+			}
+			html {
+			  width: 100vw;
+			}
+			body {
+			  overflow-x: hidden;
+			}
+		</style>
+	</head>
+	<body class="markdown-body">
+
+	 		<div class="row">
+				<div class="column-picture left">
+		 			<img class="portrait" src="img/Nalisnick_Headshot.jpeg">
+				</div>
+				<div class="column-picture right">
+				  <h2>Eric Nalisnick</h2>
+				  <p>Assistant Professor<br/>
+				    <a href="https://amlab.science.uva.nl/">Amsterdam Machine Learning Lab</a><br/>
+				    <a href="https://ivi.uva.nl/">Informatics Institute</a><br/>
+				    <a href="https://www.uva.nl/en">University of Amsterdam</a></p>
+
+				  <p><a href="mailto:e.t.nalisnick@uva.nl">Email</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="bio.html">Bio</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="CV.pdf">CV</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://github.com/enalisnick/">GitHub</a>  &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://scholar.google.com/citations?user=-hM1oqwAAAAJ&hl=en">Google Scholar</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://twitter.com/eric_nalisnick">Twitter</a></p> <br/>
+				</div> 
+
+				<p>I am interested in building autonomous systems using probabilistic and statistical modeling.  These systems should not simply demonstrate <i>artificial intelligence</i> but <i>artificial humility</i> as well.  They need to be transparent about their beliefs and willing to admit when they might be wrong.  Consider a medical system whose purpose is to diagnose a disease.  A doctor can never use a system whose output is restricted to <i>yes</i> or <i>no</i>.  How confident is this system?  How robust are these predictions?  Has the system has been validated for this patient type?  Would collecting more data help?  My research consists of formulating general algorithms that use probabilistic reasoning to answer these questions.</p>
+
+			<h4>Selected Publications</h4>
+			<div class="row">
+			  <div class="column">
+			    <ul>
+			      <li> <a href="https://openreview.net/forum?id=H1xwNhCcYm"><i>Do Deep Gen. Models Know What They Don't Know?</i> </a></li>
+			      <li><a href="https://arxiv.org/abs/2006.10801"><i>Predictive Complexity Priors</i> </a></li>
+			      <li><a href="https://arxiv.org/abs/1912.02762"><i>Normalizing Flows for Prob. Modeling and Inference</i> </a></li>
+			    </ul>
+			  </div>
+			  <div class="column">
+			    <ul>
+                              <li><a href="http://proceedings.mlr.press/v85/ji18a.html"><i>Bayesian Trees for Automated Cytometry Data Analysis</i> </a></li>
+                              <li><a href="http://proceedings.mlr.press/v97/nalisnick19a.html"><i>Dropout as a Structured Shrinkage Prior</i> </a></li>
+                              <li><a href="https://papers.nips.cc/paper/2019/hash/84c2d4860a0fc27bcf854c444fb8b400-Abstract.html"><i>Bayes Batch Active Learning as Sparse Subset Approx.</i> </a></li>
+                            </ul>
+			  </div>
+			</div>
+
+			<h2></h2>
+			<h3>Research Group</h3>
+			
+			<div class="row">
+                          <div class="column">
+			    PhD Candidates:
+                            <ul>
+			      <li> <a href="https://www.semanticscholar.org/author/Putra-Manggala/2799707">Putra Manggala</a> (with <a href="https://ada.liacs.nl/">Holger Hoos</a>)</li>
+			      <li> <a href="https://research.vu.nl/en/persons/urja-khurana">Urja Khurana</a> (at Vrije Univ., with <a href="http://wordpress.let.vupr.nl/antske/">Antske Fokkens</a>) 
+			      <li> <a href="https://mrinanksharma.github.io/">Mrinank Sharma</a><br/>(at Oxford, with <a href="https://www.robots.ox.ac.uk/~twgr/">Tom Rainforth</a> and <a href="http://www.stats.ox.ac.uk/~teh/index.html">Yee Whye Teh</a>)</li>
+                            </ul>
+                          </div>
+                          <div class="column">
+			    Vacancies:
+                            <ul>
+			      <li> <a href="https://www.uva.nl/en/content/vacancies/2020/10/20-621-phd-or-postdoc-position-on-probabilistic-modeling-in-the-wild.html">PhD or Postdoc on <i>Probabilistic Modeling in the Wild</i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+			<h2></h2>
+			<h3>Courses Taught</h3>
+
+			<ul>
+				<li>
+					<a href="https://studiegids.uva.nl/xmlpages/page/2020-2021/zoek-vak/vak/79019">Leren</a>: Introduction to Machine Learning  &nbsp;  (Undergraduate)
+				</li>
+			 </ul>
+
+			<h2></h2>
+			<h3>Selected Talks</h3>
+			<ul>
+                          <li>
+                            <a href="https://slideslive.com/38930809/invited-talk-detecting-distribution-shift-with-deep-generative-models"><i>Detecting Distribution Shift with Deep Generative Models</i></a></li>
+			  <li>
+                            <a href="https://docs.google.com/presentation/d/1LPQiHxOefaJOiu2CGkOpjQxo5IyKiTH0malChc7ymOU/edit?usp=sharing"><i>Normalizing Flows for Tractable Probabilistic Modeling and Inference</i></a></li>
+			  <li>
+                           <a href="https://docs.google.com/presentation/d/1qzrUsi7XpZt8ud25U0-ZHfn79gXSlDwY8GlEXBarv2M/edit?usp=sharing"><i>Who Invented the Idea of Artificial Intelligence?</i></a></li>
+                         </ul>
+	</body>
+</html>
