@@ -50,14 +50,14 @@
 				  <p><a href="mailto:ranxuming@gmail.com">Email</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="bio.html">Bio</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="Xuming_CV.pdf">CV</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://github.com/ranxuming/">GitHub</a>  &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://scholar.google.com/citations?user=oTZip-cAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.researchgate.net/profile/Xuming-Ran">Research Gate</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="blog.html">Blog</a> </p> <br/>
 				</div>  
 				<p><b> Using generative models as a bridge to understand the biological and artificial intelligence.</b></p>
-				<p>I aim to use the first principal intelligence theory to bridge the gap between artificial and biological intelligence. This theory of closed-loop transcription via rate reduction and information theory can help build a generative model that excels at image synthesis and novelty detection. Furthermore, the generative model can enhance the visual cortex computation because it shares the same property that the human or primate visual cortex's abstract attribute resembles the generative model's latent attribute. Since memory is associated with visual stimuli, we can investigate the relationship between the hippocampus and the visual cortex with a generative model. Additionally, we can apply the insights from memory to guide continual learning. Finally, I want to apply this new model to solve problems in science (e.g., biology, chemistry, and physics). </p>
+				<p>My goal is to use the first principal intelligence theory to bridge the gap between artificial and biological intelligence. This theory of closed-loop transcription via rate reduction and information theory can help build a generative model that excels at image synthesis and novelty detection. Furthermore, the generative model can enhance the visual cortex computation because it shares the same property that the human or primate visual cortex's abstract attribute resembles the generative model's latent attribute. Since memory is associated with visual stimuli, we can investigate the relationship between the hippocampus and the visual cortex with a generative model. Additionally, we can apply the insights from memory to guide continual learning. Finally, I want to apply this new model to solve problems in science (e.g., biology, chemistry, and physics). </p>
 				Generative model, Visual cortex computation, Memory modelling, Continual learning, AI for Science.
 	
 				<h4>Research Interests</h4>
                        <div class="row">
 							<ul>
 							<li>Generative model(e.g., VAE, PixelCNN, GAN, Glow, and Diffusion model) via first priciple of intellgince (Information theory and Closed-loop Transcription and <a href="https://www2.stat.duke.edu/~berger/papers/formal-def.pdf">Reference prior</a> )  </li>
-							<li>Visual cortex computation via GM(e.g.,Visual cortex modeling, Neural encoding and decoding)   </li>
+							<li>Visual cortex computation via Generative model(e.g.,Visual cortex modeling, Neural encoding and decoding)   </li>
 							<li>Memory modelling with Visual cortex computation (Hippocampus modelling) </li>
 							<li>Continual learning via memory modelling (e.g., Excitation-inhibition balance, Learning method of NN, Self-supervised learning)  </li>
                             <li>Application of generative model with Continual learning  (e.g., Novelty detection, Image synthesis, AI for Science (<i>e.g.,</i>Structural variants detection(computational biology), Catalytic reaction(Chemistry))</li>
@@ -67,40 +67,101 @@
 			<h2></h2>
 			<h3>Projects</h3>
 			<h4>Generative model for image synthesis and novelty detection</h4>
-			<div class="row">
 				<ul>
-				<li>GAN for Text-to-image synthesis  </li>
-			    <div class="column-picture left">
-				    <img class="portrait" src="photo/project/Project1.GAN4T2I.png">
-		        </div>
-		        <p><b>[Paper]</b> <b>Background:</b> Text-to-Image is a significant problem in computer vision. <b>Question:</b> Recently, there are some problems in the quality and semantic consistency of the generated image. <b>Method:</b>In this paper we propose an approach for Text-to-Image synthesis by focusing on the perception. We use text embeddings to generate semantic feature maps before target images synthesis instead of generating target images directly. The ground truth semantic layouts are calculated by interpretable classification network, and we will learn to generate semantic layouts before inferring target images from them. <b>Result:</b>We have trained our approach on the CUB2011 dataset and verified the quality of its generation and the interpretability of the network in simple background and small scale feature generation. </p> 
+					<li>VAE for Novelty detection </li>
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project4.VAE4OOD.png">
+		            </div>
+					<p> <a href="#project:2"><b>[Paper]</b></a> Variational autoencoders (VAEs) are influential generative models with rich representation capabilities from the deep neural network architecture and Bayesian method. However, VAE models have a weakness that assign a higher likelihood to out-of-distribution (OOD) inputs than in-distribution (ID) inputs. To address this problem, a reliable uncertainty estimation is considered to be critical for in- depth understanding of OOD inputs. In this study, we propose an improved noise contrastive prior (INCP) to be able to integrate into the encoder of VAEs, called INCPVAE. INCP is scalable, trainable and compatible with VAEs, and it also adopts the merits from the INCP for uncertainty estimation. Experiments on various datasets demonstrate that compared to the standard VAEs, our model is superior in uncertainty estimation for the OOD data and is robust in anomaly detection tasks. The INCPVAE model obtains reliable uncertainty estimation for OOD inputs and solves the OOD problem in VAE models. </p> 
+					<div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project5.VAE4OOD2.png">
+		            </div>
+					<p> <a href="#project:2"><b>[Paper]</b></a>  We study the out-of-distribution detection problem using likelihood-based models. We propose a novel \textit{Bigeminal Priors Variational Autoencoder (BPVAEs)} method to remediate the possible higher likelihood of VAEs on the out-of-distribution (OOD) examples than on the in-distribution (ID) examples. With shared encoder and decoder networks, our BPVAE models the ID and OOD data simultaneously using ID priors and OOD priors respectively. We prove that, given the appropriate priors, the OOD data that would not have been detected using the single-prior VAEs model is guaranteed to have lower likelihoods than the ID data using our BPVAE model. We also show empirically that our BPVAE model can generalize to the unseen OOD examples. We compare our model with other likelihood-based OOD detection methods. Our numerical results demonstrate the effectiveness of BPVAEs on several benchmark OOD detection tasks. </p> 
+				
+				    <li>GAN for Text-to-image synthesis  </li>
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project1.GAN4T2I.png">
+		            </div>
+		            <p> <a href="#project:1"><b>[Paper]</b></a>   Text-to-Image is a significant problem in computer vision. <b>Question:</b> Recently, there are some problems in the quality and semantic consistency of the generated image. <b>Method:</b>In this paper we propose an approach for Text-to-Image synthesis by focusing on the perception. We use text embeddings to generate semantic feature maps before target images synthesis instead of generating target images directly. The ground truth semantic layouts are calculated by interpretable classification network, and we will learn to generate semantic layouts before inferring target images from them. <b>Result:</b>We have trained our approach on the CUB2011 dataset and verified the quality of its generation and the interpretability of the network in simple background and small scale feature generation. </p> 
+				
+				    <li>GAN for medical image synthesis  </li>
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project2.GAN4BCIS.png">
+		            </div>
+		            <p> <a href="#project:2"><b>[Paper]</b></a>   In medicine, white blood cells (WBCs) play an important role in the human immune system. The different types of WBC abnormalities are related to different diseases so that the total number and classification of WBCs are critical for clinical diagnosis and therapy. However, the traditional method of white blood cell classification is to segment the cells, extract features, and then classify them. Such method depends on the good segmentation, and the accuracy is not high. Moreover, the insufficient data or unbalanced samples can cause the low classification accuracy of model by using deep learning in medical diagnosis. To solve these problems, this paper proposes a new blood cell image classification framework which is based on a deep convolutional generative adversarial network (DC-GAN) and a residual neural network (ResNet). In particular, we introduce a new loss function which is improved the discriminative power of the deeply learned features. The experiments show that our model has a good performance on the classification of WBC images, and the accuracy reaches 91.7%.</p> 
+					<div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project3.GAN4MIS.png">
+		            </div>
+		            <p> <a href="#project:2"><b>[Paper]</b></a>   Gadolinium-based-contrast-agents (GBCAs) injection has some potential risks for occurrence of adverse events and gadolinium deposition in brain tissue. We collected a dataset containing 113060 pairs of precontrast T1-weighted images and contrast-enhanced T1-weighted images (T1C) including abundant lesion categories to develop a novel virtual contrast enhancement model. Our model can utilize long-dependencies and peripheral information to acquire precise mapping transformation via logical inferences. Large-scale studies with qualitative evaluation and quantitative measurement indicate that our proposed model can not only generate virtual MR T1C with high fidelity, but also produce accurate enhancement results in both normal structures and intracranial lesions. </p>
+					</ul>
+				<h4>Visual cortex modelling and neural encoding and decoding</h4>
+				<ul>
+				    <li> Visual cortex modelling </li>
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project6.AE4Visual.png">
+		            </div>
+		            <p> <a href="#project:1"><b>[Paper]</b></a>   Artificial neural network (ANN) is a versatile tool to study the neural representation in the ventral visual stream, and the knowledge in neuroscience in return inspires ANN models to improve performance in the task. However, it is still unclear how to merge these two directions into a unified framework. In this study, we propose an integrated framework called Deep Autoencoder with Neural Response (DAE-NR), which incorporates information from ANN and the visual cortex to achieve better image reconstruction performance and higher neural representation similarity between biological and artificial neurons. The same visual stimuli (i.e., natural images) are input to both the mice brain and DAE-NR. The encoder of DAE-NR jointly learns the dependencies from neural spike encoding and image reconstruction. For the neural spike encoding task, the features derived from a specific hidden layer of the encoder are transformed by a mapping function to predict the ground-truth neural response under the constraint of image reconstruction. Simultaneously, for the image reconstruction task, the latent representation obtained by the encoder is assigned to a decoder to restore the original image under the guidance of neural information. In DAE-NR, the learning process of encoder, mapping function and decoder are all implicitly constrained by these two tasks. Our experiments demonstrate that if and only if with the joint learning, DAE-NRs can improve the performance of visual image reconstruction and increase the representation similarity between biological neurons and artificial neurons. The DAE-NR offers a new perspective on the integration of computer vision and neuroscience. </p> 
+				
+				    <li>Neural encoding and decoding  </li>
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project7.AE4Endecoding.png">
+		            </div>
+		            <p> <a href="#project:2"><b>[Paper]</b></a>    Neural coding, including encoding and decoding, is one of the key problems in neuroscience for understanding how the brain uses neural signals to relate sensory perception and motor behaviors with neural systems. However, most of the existed studies only aim at dealing with the continuous signal of neural systems, while lacking a unique feature of biological neurons, termed spike, which is the fundamental information unit for neural computation as well as a building block for brain–machine interface. Aiming at these limitations, we propose a transcoding framework to encode multi-modal sensory information into neural spikes and then reconstruct stimuli from spikes. Sensory information can be compressed into 10% in terms of neural spikes, yet re-extract 100% of information by reconstruction. Our framework can not only fea- sibly and accurately reconstruct dynamical visual and auditory scenes, but also rebuild the stimulus patterns from functional magnetic resonance imaging (fMRI) brain activities. More impor- tantly, it has a superb ability of noise immunity for various types of artificial noises and background signals. The proposed framework provides efficient ways to perform multimodal feature representation and reconstruction in a high-throughput fashion, with potential usage for efficient neuromorphic computing in a noisy environment. </p> 
+				
+			        <div class="column-picture left">
+				        <img class="portrait" src="photo/project/Project8.AE4RC.png">
+		            </div>
+		            <p> <a href="#project:1"><b>[Paper]</b></a>   Sensory information recognition is mainly processed through ventral and dorsal visual pathways in the primate brain visual system, which has layered and feature representations that show a strong resemblance to convolutional neural networks (CNNs), including reconstruction and classification. However, most of the existing studies treat them as a separate part, either considering only pattern reconstruction or classification tasks, without considering a particular feature of biological neurons, which are the critical visual sensory information units to neural computation. To solve these problems, we propose a uniform framework for sensory information recognition with augmented spikes. By integrating pattern reconstruction and classification into one framework, the framework can reasonably and precisely reconstruct multi-modal sensory information but also classify them by giving final label answers. The conducted experiments on video scenes, static image datasets, dynamic auditory scenes, and functional magnetic resonance imaging (fMRI) brain activities demonstrate that our framework delivers state-of-the-art pattern reconstruction quality and classification accuracy. Our framework enhances biological realism in multi-modal pattern recognition models. We hope to shed light on how the primate brain visual system performs this reconstruction and classification task by combining ventral and dorsal pathways. </p> 
+				
+				</ul>
+				<h4> Learning method for training Neural Network </h4>
+				<ul>
+					<li> Hybrid learning with inhibition-excitation mechanism for training SNN </li>
+					<div class="column-picture left">
+						<img class="portrait" src="photo/project/Project9.EI4Learning.png">
+					</div>
+					<p> <a href="#project:1"><b>[Paper]</b></a>   The training method of Spiking Neural Networks (SNNs) is an essential problem,and how to integrate local and global learning is a worthy research interest. However, the current integration methods do not consider the network conditions suitable for local and global learning and thus fail to balance their advantages. In this paper, we propose an Excitation-Inhibition Mechanism-assisted Hybrid Learning (EIHL) algorithm that adjusts the network connectivity by using the excitation-inhibition mechanism and then switches between local and global learning according to the network connectivity. The experimental results on CIFAR10/100 and DVS-CIFAR10 demonstrate that the EIHL not only obtains better accuracy performance than other methods but also has excellent sparsity advantage. Especially, the Spiking VGG11 is trained by EIHL, STBP, and STDP on DVS CIFAR10, respectively. The accuracy of the Spiking VGG11 model with EIHL is 62.45%, which is 4.35% higher than STBP and 11.40% higher than STDP. Furthermore, he sparsity achieves 18.74%, which is quite higher than the above two non-sparse methods. Moreover, the excitation-inhibition mechanism used in our method also offers a new perspective on the field of SNN learning. </p> 
 				</ul>
 
+				<h4>AI for Science</h4>
+				<ul>
+					<li>Multi-MAE for Genome variants detection  </li>
+					<div class="column-picture left">
+						<img class="portrait" src="photo/project/Project10.MAE4Genome.png">
+					</div>
+					<p> <a href="#project:1"><b>[Paper]</b></a>   The detection of human genomic structural variants (SVs) is essential for studying genetic evolution and disease progression. Recent advances in long-read sequencing technologies have greatly facilitate SV detection, and the rich SV features derived from long reads even enabled complex SV discovery.
+						To get better performance for SV detection, we developed GeneMAE to detect SVs from long reads. 
+						Inspired by multi-modal learning, here we convert the detection of SVs into a targeted multi-object recognition task, using two modalities of images to represent the SV feature sequences and a deep neural network to detect different types of SVs from the modalities. 
+						Specifically, the multi-modal framework leverages two distinct modalities of SV: SVision and Cue. We demonstrate that GeneMAE can exploit the information sharing between modalities to capture more features of SVs and achieve higher accuracy for both simple and complex SVs. 
+						This study provides a multi-modal perspective for SV detection and demonstrates the potential of applying deep learning in genomics. </p> 
+				</ul>
 
 		    
 			<h2></h2>
-			<h3>Publications</h3>
+			<h3> Publications</h3>
 			    <ol list-style-type: lower-roman>
-                  <li><b>Xuming Ran</b>, et al,  <a href="bio.html">Self-supervised deep learning encodes multi-modalities features of genome sequence for detecting complex structural variants</a>, Submit to:  <i>  Nature Machine Intelligence</i> , 2023.</li>
-                  <li><b>Xuming Ran</b>, Jie Zhang, Ziyuan Ye, Haiyan Wu, Qi Xu, Huihui Zhou, and Quanying Liu. <a href="https://arxiv.org/abs/2111.15309">A computational framework to unify representation similarity and function in biological and artificial neural networks.</a> Under Review (Rivsion 1) at: <i> IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, 2022.</li>
+                  <li id= "project:1" ><b>Xuming Ran </b>, Honliang Yan, Jiadong Lin, Songbo Wang, Lei Bai, Wanli Ouyang,  Self-supervised deep learning encodes multi-modalities features of genome sequence for detecting complex structural variants, Submit to:  <i>  Nature Machine Intelligence</i> , 2023.</li>
+                  <li id= "project:2"><b>Xuming Ran</b>, Jie Zhang, Ziyuan Ye, Haiyan Wu, Qi Xu, Huihui Zhou, and Quanying Liu. <a href="https://arxiv.org/abs/2111.15309">A computational framework to unify representation similarity and function in biological and artificial neural networks.</a> Under Review (Rivsion 1) at: <i> IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, 2022.</li>
                   <li><b>Xuming Ran</b>, Mingkun Xu, Qi Xu, Huihui Zhou, and Quanying Liu. <a href="https://arxiv.org/abs/2010.01819">Bigeminal Priors Variational auto-encoder.</a> arXiv preprint arXiv:2010.01819, 2020.</li>
                   <li><b>Xuming Ran</b>, Mingkun Xu, Lingrui Mei, Qi Xu, and Quanying Liu. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608021004111">Detecting out-of-distribution samples via variational auto-encoder with reliable uncertainty estimation</a> <i>Neural Networks</i>, 2021.</li>
                   <li>Jie Yuan, <b>Xuming Ran</b>, Keyin Liu, Chen Yao, Yi Yao, Haiyan Wu, and Quanying Liu. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165027021003769">Machine Learning Applications on Neuroimaging for Diagnosis and Prognosis of Epilepsy: A Review,</a> <i>Journal of neuroscience methods</i>, 2021 .</li>
                   <li>Lingrui Mei, <b>Xuming Ran</b>, and Jin Hu. <a href="https://ieeexplore.ieee.org/abstract/document/9002666">Weakly Supervised Attention Inference Generative Adversarial Network for Text-to-Image</a>, <i> 2019 IEEE Symposium Series on Computational Intelligence (SSCI)</i>, 2019.</li>
                   <li>Qi Xu, Jiangrong Shen, <b>Xuming Ran</b>, Huajin Tang, Gang Pan, and Jian K. Liu. <a href="https://ieeexplore.ieee.org/abstract/document/9580757">Robust transcoding sensory information with neural spikes</a>, <i>IEEE Transactions on Neural Networks and Learning Systems</i>, 2021.</li>
                   <li>Li Ma, Renjun Shuai, <b>Xuming Ran</b>, Wenjia Liu, and Chao Ye. <a href="https://link.springer.com/article/10.1007/s11517-020-02163-3">Combining DC-GAN with ResNet for blood cell image classification</a>, <i>Medical & biological engineering & computing</i> 58, no. 6 :1251-1264, 2020.</li>
-                  <li>Qi Xu, Yuyuan Gao, Jiangrong Shen, Yaxin Li, <b>Xuming Ran</b>, Huajin Tang, Gang Pan, <a href="bio.html">Enhancing Adaptive History Reserving by Spiking Convolutional Block Attention Module in Recurrent Neural Networks</a>, <i> NeurIPS</i>, 2023.</li>
-                  <li>Shan-Shan Li, Yu-Shi Jiang, Xue-Ling Luo, <b>Xuming Ran</b>, Yuqiang Li, Dong Wu, Cheng-Xue Pan, Peng-Ju Xia, <a href="bio.html">Photocatalytic Vinyl Radical-Mediated Multicomponent 1,4-/1,8-carboimination Across Alkynes and Olefins/(Hetero)Arenes</a>, <i> Science China Chemistry </i>, 2023.</li>
-                  <li>Songming Zhang, Xiaofeng Chen, <b>Xuming Ran</b>, Zhongshan Li, Wenming Cao, <a href="bio.html">Even decision tree needs causality</a>, Under Review at: <i> IEEE Transactions on Neural Networks and Learning Systems</i>, 2022.</li>
-                  <li>Hong Peng, Mingkun Xu  Bo Wang, Zheyu Yang,  <b>Xuming Ran</b>, Bo Li, Jiaohua Huo, Jing Pei, Yuanyuan Cui , Huafeng Xiao, Xin Lou, Cuiping Mao, Guangming Zhu, Liang zhang , Zheng You, Lin Ma,  <a href="bio.html">A New Virtual MR Contrast-enhancement Method based on Deep Learning: Faster, Safer, and Easier</a>, Under Review at: <i> Nature Machine Intelligence</i>, 2022.</li>
-                  <li> Qi Xu, Sibo Liu, <b>Xuming Ran</b>, Yaxin Li, Jiangrong Shen, Huajin Tang, Jian K. Liu, and Gang Pan, <a href="bio.html">Robust Sensory Information Reconstruction and Classification with Augmented Spikes</a>, Under Review at: <i>IEEE Transactions on Neural Networks and Learning Systems</i>, 2023. </li>
+                  <li>Qi Xu, Yuyuan Gao, Jiangrong Shen, Yaxin Li, <b>Xuming Ran</b>, Huajin Tang, Gang Pan, Enhancing Adaptive History Reserving by Spiking Convolutional Block Attention Module in Recurrent Neural Networks, <i> NeurIPS</i>, 2023.</li>
+                  <li>Shan-Shan Li, Yu-Shi Jiang, Xue-Ling Luo, <b>Xuming Ran</b>, Yuqiang Li, Dong Wu, Cheng-Xue Pan, Peng-Ju Xia, <a href="https://link.springer.com/article/10.1007/s11426-023-1812-x">Photocatalytic Vinyl Radical-Mediated Multicomponent 1,4-/1,8-carboimination Across Alkynes and Olefins/(Hetero)Arenes</a>, <i> Science China Chemistry </i>, 2023.</li>
+                  <li>Songming Zhang, Xiaofeng Chen, <b>Xuming Ran</b>, Zhongshan Li, Wenming Cao, Even decision tree needs causality, Under Review at: <i> IEEE Transactions on Neural Networks and Learning Systems</i>, 2022.</li>
+                  <li>Hong Peng, Mingkun Xu  Bo Wang, Zheyu Yang,  <b>Xuming Ran</b>, Bo Li, Jiaohua Huo, Jing Pei, Yuanyuan Cui , Huafeng Xiao, Xin Lou, Cuiping Mao, Guangming Zhu, Liang zhang , Zheng You, Lin Ma,  A New Virtual MR Contrast-enhancement Method based on Deep Learning: Faster, Safer, and Easier, Under Review at: <i> Nature Machine Intelligence</i>, 2022.</li>
+                  <li> Qi Xu, Sibo Liu, <b>Xuming Ran</b>, Yaxin Li, Jiangrong Shen, Huajin Tang, Jian K. Liu, and Gang Pan, Robust Sensory Information Reconstruction and Classification with Augmented Spikes, Under Review at: <i>IEEE Transactions on Neural Networks and Learning Systems</i>, 2023. </li>
+				  <li> Tingting Jiang, Qi Xu, <b>Xuming Ran</b>, Jiangrong Shen, Pan Lv, Qiang Zhang, Gang Pan, Adaptive deep spiking neural network with global-local learning via balanced excitatory and inhibitory mechanism, Under Review at: <i>ICLR</i>, 2023. </li>
+				  <li> Mengyu Yang, Ye Tian, Rui Su, <b>Xuming Ran</b>, ViMoV2: Efficient Recognition for Long-untrimmed Videos with Multi-modalities, Under Review at: AAAI, 2023 </li>
 			    </ol>
 			<h2></h2>
 			<h3>Talks</h3>
                 <ul>
-                <li><a href="https://www.sustech.edu.cn/en/events/english-mapping-v4-to-artificial-neurons-via-autoencoder-allows-decoding-visual-informaion.html"><i>Mapping V4 to Artificial Neurons via Autoencoder allows Decoding Visual Information</i></a></li>
-                <li><a href="https://math.sustech.edu.cn/applied/11898.html?lang=en"><i>Deep Generative Model for Out-of-distribution Detection</i></a></li>
-				<li><a href="https://www.bilibili.com/video/BV1qL4y1s7V7/?spm_id_from=333.337.search-card.all.click&vd_source=6a872fcac11e47c14324ca8914bea7bf"><i>A computational framework to unify representation similarity and function in biological and artificial neural networks.</i></a></li>
+                <li><a href="talk/talk1-Mapping V4 to Artificial Neurons.Xm.pdf"><i>Mapping V4 to Artificial Neurons via Autoencoder allows Decoding Visual Information</i></a></li>
+                <li><a href="talk/talk2-DGM_OOD_Detection-Xm.pdf"><i>Deep Generative Model for Out-of-distribution Detection</i></a></li>
+				<li><a href="talk/talk3-Bio-intell-Xm.pdf"><i>A computational framework to unify representation similarity and function in biological and artificial neural networks.</i></a></li>
 				</ul>
 			
 			
@@ -129,6 +190,5 @@
 				<li><a href="http://brain.tsinghua.edu.cn/info/one/455">CNeuro: Computational and Theoretical Neuroscience Summer School</a>, Tsinghua Laboratory of Brain and Intelligence </li>
 				<li><a href="https://www.csh-asia.org/?content/1159">AIBC: AI and Brain Computation Summer School </a>, Cold Spring Harbor Laboratory</li>
 			   </ul>
-			<h2></h2>
-			 <h3></h3> 
+	</body>	
 </html>
